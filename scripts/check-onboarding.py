@@ -5,8 +5,9 @@ import argparse
 from pathlib import Path
 import re
 
-# Only literal framework-relative references. Local destination filenames, URLs,
-# fenced examples, and inferred links are deliberately out of scope.
+# Only literal framework-relative .md references. A renamed .py script or other
+# non-Markdown file mentioned in prose is NOT checked. Local destination filenames,
+# URLs, fenced examples, and inferred links are also out of scope.
 PACKAGE_REF = re.compile(r"(?<!`)`((?:guides|workflows|templates|scripts)/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*\.md|(?:README|ONBOARDING|ACCEPTANCE|AGENTS)\.md)`(?!`)")
 MARKDOWN_LINK = re.compile(r"\]\(((?:guides|workflows|templates|scripts)/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*\.md|(?:README|ONBOARDING|ACCEPTANCE|AGENTS)\.md)\)")
 BINDING = re.compile(r"<[A-Za-z][^<>\n]*>")
