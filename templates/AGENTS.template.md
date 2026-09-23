@@ -27,4 +27,4 @@ If a required source, pinned revision, loader link, owner, or permission is abse
 Role/persona source, if any: `<native role source or not applicable>`.
 Tier 1 memory source, if any: `<native memory source or not applicable>`.
 Acceptance record owner: `<destination-owned location>`.
-Before declaring onboarding accepted, follow the pinned framework `ACCEPTANCE.md`: prove native loader behavior in a fresh session, source lookup, refusal, bounded task with owner readback, and independent generic usability. An agent's confidence alone is not proof of injection or permissions.
+Before declaring this destination accepted, follow the pinned framework `ACCEPTANCE.md`: prove native loader behavior in a fresh session, source lookup, refusal, and a bounded task with owner readback. Independently test generic usability before claiming cross-harness portability. An agent's confidence alone is not proof of injection or permissions.

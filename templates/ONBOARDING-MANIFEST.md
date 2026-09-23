@@ -1,46 +1,36 @@
 # Onboarding manifest — destination-local template
 
-<!-- Copy to the destination's configuration location and replace bindings. This is a source map, not a grant of permission. A fresh human or agent must reach it without prior chat. -->
+<!-- Adapt under the destination owner. This is a navigation and evidence map, not a grant of permission. A fresh human or agent must reach it without prior chat. Replace all bindings in the completed local copy. -->
 
-## Bootstrap binding
+## Bootstrap route
 
-Destination and local owner: `<destination; owner>`.
-Native loader/config and verification: `<actual mechanism/location; read-only observation or trace>`.
-Installed contract: `<exact local AGENTS.md or native contract path; check method>`.
-Next link: `<contract -> this manifest directly, or contract -> START_HERE.md -> this manifest; exact local routes>`.
-Native-injected context and override discovery: `<how to observe; unverified if not observable>`.
+Destination and maintainer: `<destination; local owner>`.
+Actual native loader/config and read-only observation route: `<mechanism; location; check or unverified>`.
+Installed contract and version check: `<existing AGENTS.md or native contract; exact path; version/check method>`.
+Next link: `<contract -> this manifest, or contract -> START_HERE.md -> this manifest; exact local routes>`.
+Injected context and override discovery: `<observation method, or unverified if not observable>`. A listed file is not proof it loaded.
 
-## Package sources
+## Reviewed package sources
 
-Framework: `<authorized source/location; exact reviewed commit or owner-verifiable revision; required files and access route>`.
-Personal authority (required): `<approved private profile or reachable authoritative personal source; owner, exact approved revision/check, and authorized access route>`. Portable profile: `<approved revision/route if used, otherwise not applicable because the authoritative source is reachable>`.
-Never store secret values. An unapproved candidate is not an adopted profile. A private profile does not outrank a reachable authoritative personal source.
+Framework: `<authorized source; exact reviewed revision; access route>`. Required at setup: its onboarding/creation guidance and this template; required at acceptance: its `ACCEPTANCE.md`. Record each framework workflow/guide actually used with its verified revision in the destination acceptance record; do not preload the whole package.
+Personal authority: `<reachable canonical personal source or approved private profile; owner; approved revision/check; access route>`. If a portable profile is used, record its reviewed revision; otherwise say the canonical personal source is reachable. An unapproved candidate does not become authoritative by being listed here, and a copy does not outrank a reachable canonical personal source. Never include secret values.
 
-## Local files
+## Existing local owners and reconciliation
 
-Installed contract: `<path; required; revision/check>`.
-System facts owner (`SYSTEM.md` or adequate existing source): `<path; required; revision/check>`.
-Canonical source map (`SOURCES.md` or adequate existing source): `<path; required; revision/check>`.
-This manifest: `<path; required; revision/check>`.
-START_HERE.md: `<path/revision if intermediate pointer is used; otherwise not applicable>`.
-Persona/native SOUL.md: `<verified loader, path, revision if distinct role exists; otherwise not applicable>`.
-Tier 1/native MEMORY.md or USER.md: `<verified loader, path, revision if used; otherwise not applicable>`.
-For each local role, record whether the source is an existing reused owner, a scoped edit to it, or a new file; identify its revision and rollback route under local policy. If a different existing owner covers system or source-map facts, declare that exact route instead of creating a duplicate `SYSTEM.md` or `SOURCES.md`. Do not list nonexistent files as installed. Exact downstream routes live in the declared source map, not here.
+System/runtime facts owner: `<existing source or local SYSTEM.md; exact route; check method>`.
+Canonical source/workflow/task map: `<existing source map or local SOURCES.md; exact route; check method>`.
+For every local file changed to establish this route, record keep/link/scoped edit/new/omit, owner-approved change, version and rollback route in the destination's normal owner record. Do not copy local rules into this manifest. The manifest's own version is the containing repository revision or another external owner-maintained version record, not a self-hash in this file.
 
-## Authority and context
+Optional installed links, only if used: `<START_HERE.md / persona / native Tier 1 memory; actual loader and exact route, or not applicable>`.
 
-Governing runtime source: `<owner and scope>`.
-Personal preferences/approval owner: `<source and scope>`.
-Runtime permissions/constraints owner: `<source and scope>`.
-Role conduct owner: `<source or not applicable>`.
-Project/task truth owner: `<source or selection method>`.
-Context navigation: native entrypoint -> contract -> this manifest (possibly through `START_HERE.md`) -> selected owner documents/workflows -> optional dated history. Runtime instruction priority and real permissions are not set by this sequence. Inspect injected overrides and stop on material unresolved conflict.
+## Authority and failure
 
-## Failure and refresh
+The runtime controls real permissions; the personal source controls preferences and approvals; the system/source map identifies destination, project, role, and task owners. Loading order is navigation, not authority. A scoped source cannot grant missing access or relax a governing boundary.
+Missing, inaccessible, contradictory, or unverified required source: stop consequential work and consult `<named local resolution owner>`. Never silently float a package pin to a new version.
+Pin-refresh approver: `<owner who authorizes a new framework or personal-source revision>`; a maintainer's ability to edit this file is not approval to adopt an unreviewed version.
+When a pinned source, local owner route, or loader changes, the destination maintainer compares this manifest with the live owner, seeks the applicable owner's approval for any changed source or binding, reconciles only affected bindings, and reruns affected `ACCEPTANCE.md` checks. If change cannot be observed, mark drift unknown. No automatic sync is implied.
 
-Missing, inaccessible, contradictory, or unverified required source: stop consequential work and consult `<named local owner>`. No silent latest-version refresh. Pin-refresh approver: `<owner>`; after review update this file, re-run affected `ACCEPTANCE.md` checks, and record the result locally.
+## Acceptance record
 
-## Acceptance record location
-
-Destination-owned proof location: `<local evidence route>`.
-Distinguish observed native injection from later reads, and mark unobservable claims unverified. Keep refusal/task/provenance evidence here or with its owner, never in the generic framework.
+Destination-owned evidence location: `<local route>`.
+Record native injection separately from later reads, exact sources/versions used, reconciled local behavior, a refusal and bounded task, and unresolved limits there—not in this public framework.
