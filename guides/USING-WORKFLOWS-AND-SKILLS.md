@@ -16,12 +16,16 @@ The framework supplies portable methods, not an installed skill library. A desti
 - `workflows/memory-routing.md` — deciding whether a durable fact belongs in compact pointers, selected procedures, or dated evidence; open work remains with the task owner.
 - `workflows/continuous-improvement.md` — right-sized future-path improvement without hijacking the current task.
 - `workflows/workflow-and-skill-maintenance.md` — conditional method when creating, changing, adopting, or retiring a repeatable artifact.
+- `workflows/better-prompt.md` — turn a rough idea into a paste-ready instruction without executing it; select the destination's actual target format.
+- `workflows/north-star-roadmap-design.md` — shape direction, observable end state, and high-level phases; leave strategy promotion and phase execution with their owners.
 
-These filenames identify generic source material. At a destination, reuse a sufficient local owner instead of copying these methods into five new files by default. Record the approved source revision and the actual local route in the manifest/source map. The installed agent contract should point to selection, not preload all methods.
+These filenames identify generic source material. At a destination, reuse a sufficient local owner instead of copying every method into new files by default. Record the approved source revision and the actual local route in the manifest/source map. The installed agent contract should point to selection, not preload all methods.
 
 ## Conditional capability questions
 
 - Material operator choice? Reduce facts to the real decision, recommendation, trade-off, exact approval boundary, and what remains if not approved. A concise answer can suffice; use a destination decision-packet workflow only when reread/approval evidence warrants it.
+- Prompt refinement? Use `workflows/better-prompt.md` for a later agent request, not as permission to execute the improved prompt.
+- New direction or substantial roadmap? Use `workflows/north-star-roadmap-design.md` after checking parent strategy and existing owner; defer detailed phase work until direction is accepted.
 - Verification? Select inspection, smoke, realistic scenario, or costly-boundary test to match the claim. A code-specific TDD, review, browser, deployment, or security skill belongs to the destination/project when that task calls for it.
 - Cross-agent work? Distinguish local payload from receiver-visible delivery and acknowledgment; bind the destination's communication owner and prove the receiver can access the material. A local file alone is not delivery.
 - New skill? First test whether a workflow or existing skill owns the trigger. Audit external provenance/license and destination compatibility before installing. Keep runtime trigger metadata thin and the durable procedure with one owner.
