@@ -19,13 +19,13 @@ Never store secret values. An unapproved candidate is not an adopted profile. A 
 ## Local files
 
 Installed contract: `<path; required; revision/check>`.
-SYSTEM.md: `<path; required; revision/check>`.
-SOURCES.md: `<path; required; revision/check>`.
+System facts owner (`SYSTEM.md` or adequate existing source): `<path; required; revision/check>`.
+Canonical source map (`SOURCES.md` or adequate existing source): `<path; required; revision/check>`.
 This manifest: `<path; required; revision/check>`.
 START_HERE.md: `<path/revision if intermediate pointer is used; otherwise not applicable>`.
 Persona/native SOUL.md: `<verified loader, path, revision if distinct role exists; otherwise not applicable>`.
 Tier 1/native MEMORY.md or USER.md: `<verified loader, path, revision if used; otherwise not applicable>`.
-Do not list nonexistent files as installed. Exact downstream source routes live in `SOURCES.md`, not here.
+For each local role, record whether the source is an existing reused owner, a scoped edit to it, or a new file; identify its revision and rollback route under local policy. If a different existing owner covers system or source-map facts, declare that exact route instead of creating a duplicate `SYSTEM.md` or `SOURCES.md`. Do not list nonexistent files as installed. Exact downstream routes live in the declared source map, not here.
 
 ## Authority and context
 
