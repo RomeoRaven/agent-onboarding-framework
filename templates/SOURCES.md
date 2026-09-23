@@ -11,7 +11,7 @@ For each needed downstream source, record one entry in this shape (repeat only a
   Authorized route and verification: `<exact local route; revision or check method>`
   If unavailable: `<owner to consult and safe stop>`
 
-Include runtime governing sources, a reachable authoritative personal source if distinct from the portable profile, and current project owners as applicable. The manifest owns framework/profile package pins and local file declarations; do not repeat them or copy full rules here.
+Include runtime governing sources, a reachable authoritative personal source if distinct from the portable profile, current project/task owners, and any actual workflow, skill, runbook, and checker discovery routes needed for the agent's work. For each, distinguish installed/runtime-loaded from candidate or source-only; record a way to check current status and compatibility. If no native skill library exists, say so and use the authorized workflow route instead. The manifest owns framework/profile package pins and local file declarations; do not repeat them or copy full rules here.
 
 ## Conflicts and missing access
 
