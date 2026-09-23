@@ -1,23 +1,32 @@
 # Operator profile — private template
 
-<!-- Copy this blank template to a location you control; do not complete it in the generic framework repository. Read guides/CREATE-OPERATOR-PROFILE.md first. Remove these comments and any headings that do not help your agents. One file is sufficient unless different owners or access rules require a split. -->
+<!-- Copy privately; never fill this in the generic repository. Read guides/CREATE-OPERATOR-PROFILE.md. Replace bindings and omit irrelevant sections. One file suffices unless owners/access rules differ. -->
 
 ## Purpose and source owners
 
-<!-- Who is this for, what work does it cover, and which existing personal sources remain authoritative? If this file is a reviewed portable representation, name its source/version and refresh owner in your private copy. Do not reproduce inaccessible rules without review. -->
+Operator and scope: `<person/roles this private file covers>`.
+Authoritative source(s): `<existing owner, or state that this private file is the reviewed owner for its scope>`.
+If this is a portable representation, it does not supersede a reachable authoritative source; identify the source class/version and refresh owner below.
 
 ## Communication and working style
 
-<!-- How should the agent address you? What length, evidence, uncertainty reporting, and clarification behavior is useful? Include only durable preferences that change agent behavior. -->
+Address and reply style: `<durable preference>`.
+Evidence, uncertainty, and clarification: `<what changes decisions or reporting>`.
+Use current requests to select work; do not promote historical suggestions into directives.
 
 ## Approval boundaries
 
-<!-- What may the agent read or do without approval? Which categories need explicit permission? What should happen when authority is missing or sources conflict? This text cannot expand the destination runtime's real permissions or override its higher-priority rules. -->
+Read-only/approval boundary: `<operator-reviewed categories and scope>`.
+Follow this operator's reviewed rule for questions versus action approval: `<specific interpretation and boundary>`. A specific approval covers only its stated scope; apply the destination's stricter governing constraints and real permissions. On missing or materially conflicting authority, stop consequential action and consult `<appropriate owner>`.
 
 ## Terms and context
 
-<!-- Define stable terms that another human or agent might misunderstand. Include conceptual environment context only if useful. Keep exact paths, hosts, accounts, live state, and tool routes in destination-local files. -->
+Stable terminology, if needed: `<short definitions or not applicable>`.
+Put exact paths, hosts, account identifiers, tools, and live state in their destination/project owners, not this portable profile.
 
 ## Review and revision
 
-<!-- Record the framework revision against which this profile was reviewed and the profile's own revision/date. State who will review changes to upstream personal sources before a destination refreshes this representation. -->
+Review status: `<candidate or operator-approved>`.
+Framework revision reviewed: `<exact commit/release>`.
+Profile revision/date and reviewer: `<owner-verifiable version/date; reviewer>`.
+Refresh owner: `<authorized person/agent>`; when an upstream personal source changes, review this representation and destination pins before adoption. Do not copy raw memory, credentials, sessions, or task queues.

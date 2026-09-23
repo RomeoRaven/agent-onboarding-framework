@@ -1,19 +1,27 @@
 # System — destination-local template
 
-<!-- Copy to the destination's configuration location and remove comments. Do not complete this file in the generic framework repository. Keep only verified, durable local facts; never put secret values here. -->
+<!-- Copy to the destination's configuration location and replace bindings. Do not complete it here. Keep verified, durable local facts only; never secret values. -->
 
 ## Destination and runtime
 
-<!-- Which destination is this, what agent/harness is in use, and which existing startup entrypoint points to the local manifest? Include exact routes only in this destination-owned copy. -->
+Destination: `<destination identifier>`; runtime/harness: `<verified name/version>`.
+Native loader/config: `<exact local location and evidence route>`.
+Installed contract: `<exact path and verified discovery behavior>`.
+Owner: `<local maintainer>`.
 
 ## Tools and access
 
-<!-- Which tools are actually available? How can an agent verify access? Name credential mechanism references, never secret values. Say what is not available or unverified. -->
+Available and verified tools/capabilities: `<list only relevant real capabilities and check method>`.
+Unavailable or unverified capabilities: `<list or not applicable>`.
+Credential mechanism owner (never a value): `<owner route or not applicable>`.
 
 ## Permissions and constraints
 
-<!-- Which actions can this runtime actually perform, and which require explicit human or administrator approval? Link the governing source. A written instruction cannot grant permissions the runtime lacks. -->
+Governing runtime source: `<exact authorized route and scope>`.
+Effective permissions and approval path: `<verified boundary and owner>`.
+This file does not grant permissions. On missing access or a material conflict, stop consequential work and consult the governing owner.
 
 ## Owner and verification
 
-<!-- Who maintains this local file? When was each consequential claim checked, and against which owner or read-only source? Put changing service status in its real owner, not here. -->
+Verified by/against: `<owner or read-only source, checked date/version>`.
+Refresh when the loader, capability, or constraint changes; keep changing service state with its actual owner, not here.
